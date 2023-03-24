@@ -16,7 +16,6 @@ import axios from "axios";
 //
 
 const Tablar = (konu) => {
-  //let secilen = "";
   const topicsDiv = document.createElement("div");
   topicsDiv.classList.add("topics");
   konu.forEach((item) => {
@@ -24,10 +23,6 @@ const Tablar = (konu) => {
     tab.classList.add("tab");
     tab.textContent = item;
     topicsDiv.appendChild(tab);
-    // tab.addEventListener("click", (e) => {
-    //   console.log(secilen);
-    //   return (secilen = e.target.textContent);
-    // });
   });
 
   return topicsDiv;

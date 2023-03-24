@@ -59,33 +59,6 @@ const Card = (makale) => {
 //
 
 const cardEkleyici = (secici) => {
-  // axios
-  //   .get("http://localhost:5001/api/makaleler")
-  //   .then((response) => {
-  //     const parent = document.querySelector(secici);
-  //     const cards = Card(response.data.makaleler);
-  //     parent.appendChild(cards);
-  //   })
-  //   .catch((error) => {
-  //     console.log("başarısız", error);
-  //   });
-
-  // axios.get(`http://localhost:5001/api/makaleler`).then((response) => {
-  //   const makaleler = response.data.makaleler;
-  //   const elem = document.querySelector(secici);
-  //   makaleler.boostrap.forEach((item) => {
-  //     const card = Card(item);
-  //     elem.appendChild(card);
-
-  // //    for (let i = 0; i < makaleler.length; i++) {
-  // //     makaleler[i].forEach((item) => {
-  // //       const card = Card(item);
-  // //       elem.appendChild(card);
-  // //     })
-  // //   }
-  //   });
-  // });
-
   axios
     .get("http://localhost:5001/api/makaleler")
     .then(function (response) {
