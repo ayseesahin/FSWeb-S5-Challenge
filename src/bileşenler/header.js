@@ -37,7 +37,7 @@ const Header = (baslik, tarih, yazi) => {
 
 const headerEkleyici = (secici) => {
   const headerSelector = document.querySelector(secici);
-  const header = Header("Makale Zamanı", "24 Mart 2023", "Havalar nasıl?");
+  const header = Header("Makale Zamanı", Date(), "Havalar nasıl?");
   headerSelector.appendChild(header);
 };
 
